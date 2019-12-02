@@ -1,0 +1,136 @@
+body {
+  width: 100%;
+  height: 100%;
+  background: #111111;
+}
+
+#app {
+  width:100%;
+  height:100%;
+}
+
+.header {
+  font-family: "Helvetica Neue", sans-serif;
+  padding-top: 20px;
+  color: #fafafa;
+  text-align: center;
+}
+
+.headerSmall {
+  font-family: "Helvetica Neue", sans-serif;
+  padding-top: 10px;
+  color: #fafafa;
+  text-align: center;
+}
+
+#barButtonGroup {
+  list-style-type: none;
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+#barButtonGroup > li {
+  display: inline-block;
+  width: 30px;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #fafafa;
+  font-size: 1.4em;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#sequencer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: table;
+  word-spacing: -4px;
+}
+
+.button {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 0.9em;
+  color: #FAFAFA;
+  padding-top: 6px;
+}
+
+#demo {
+  float: left;
+}
+
+#clear {
+  float: right;
+}
+
+.column {
+  display: inline-block;
+}
+
+.selected {
+  text-decoration: underline;
+}
+
+.column > div {
+  box-sizing: border-box;
+  border-radius: 2px;
+  width: 2.25vw;
+  height: 2.25vw;
+  margin: 1px;
+  border: 1px solid black;
+}
+
+.on {
+  filter: blur(1px);
+  background-color: #fafafa !important;
+}
+
+.off {
+  background-color: #333333;
+}
+
+.playing {
+  filter: blur(1px);
+  background-color: #555555;
+}
+
+/* Responsive controls */
+@media only screen and (max-width: 768px) {
+  .column > div {
+    width: 3.25vw;
+    height: 3.25vw;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .column > div {
+    width: 4vw;
+    height: 4vw;
+  }
+}
+
+@media only screen and (max-width: 472px) {
+  .column > div {
+    width: 4.75vw;
+    height: 4.75vw;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .column > div {
+    width: 5.5vw;
+    height: 5.5vw;
+  }
+}
