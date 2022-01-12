@@ -1,6 +1,6 @@
 # Tenori × 4
 
-Demo available [here](https://einoken.github.io/tenori4).
+Demo available [here](https://einoko.github.io/tenori4).
 
 Tenori × 4 is a Yamaha Tenori-on style synthesizer/sequencer made with JavaScript.
 
